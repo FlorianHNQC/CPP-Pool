@@ -48,6 +48,14 @@ class Student {
             }
         }
 
+        string GetName(void) {
+            return string(_name.c_str());
+        };
+
+        int GetEnergyLeft(void) {
+            return _energyPoints;
+        };
+
     private:
         string _name;
         int _energyPoints;
